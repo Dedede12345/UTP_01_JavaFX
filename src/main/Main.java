@@ -7,11 +7,14 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    static {
+        System.loadLibrary("CPP_BackEnd");
+    }
 
     @Override
     public void start(Stage primaryStage) {
-
-        Label label = new Label("Hello World");
+        String labelText = hello();
+        Label label = new Label(labelText);
 
         StackPane root = new StackPane();
         root.getChildren().add(label);
@@ -26,5 +29,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+    native static String hello();
 
 }

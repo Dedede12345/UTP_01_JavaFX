@@ -1,0 +1,1 @@
+javac --module-path /Users/glebdenisov/Desktop/JavaFX/javafx-sdk-21.0.5/lib --add-modules javafx.controls,javafx.fxml -h . src/main/Main.java
