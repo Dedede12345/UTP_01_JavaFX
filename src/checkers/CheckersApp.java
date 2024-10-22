@@ -17,7 +17,9 @@ public class CheckersApp extends Application {
     private Parent createContent(){
         Pane root = new Pane();
         root.setPrefSize(WIDTH * TILE_SIZE, HEIGHT * TILE_SIZE);
-        root.getChildren().addAll(tileGroup);
+
+        // Tiles and pieces
+        root.getChildren().addAll(tileGroup, pieceGroup);
 
 
         // Creating Tiles
