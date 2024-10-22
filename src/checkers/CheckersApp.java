@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 
 public class CheckersApp extends Application {
 
+    static {
+        System.loadLibrary("CPP_BackEnd");
+    }
+
     public static final int TILE_SIZE = 100;
     public static final int WIDTH = 8;
     public static final int HEIGHT = 8;
